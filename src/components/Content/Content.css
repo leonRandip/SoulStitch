@@ -1,0 +1,133 @@
+
+.wrap{
+  margin-top: 100px;
+}
+.contain-subtext{
+  font-size: 15px;
+  color: gray;
+}
+.header-text{
+    font-size: 100px;
+     margin-left: 10px;
+     color: black;
+     width: 50vw;
+}
+.sub-text{
+    margin-left: 20px;
+    font-size: 40px;
+    color: gray;
+    width: 50vw;
+}
+.text-cont{
+  position: relative;
+  margin-top: 50px;
+  margin: 0;
+}
+.image-cont{
+  top: 0;
+  margin-top: 20px ;
+    margin-left: 70%;
+    position: absolute;
+}
+.burst-12 {
+      background-image: url('../Styling/portrait-smiling-young-casual-brunette-woman_171337-29897.avif');
+      width: 200px;
+      height: 200px;
+      border-radius: 10px;
+      position: relative;
+      text-align: center;
+      background-size: cover;
+      
+    }
+    .burst-12:before,
+    .burst-12:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 200px;
+      width: 200px;
+      border-radius: 10px;
+      background-size: cover;
+      background-color: rgba(0, 0, 0, 0.129);
+    }
+    .burst-12:before {
+      transform: rotate(30deg);
+    }
+    .burst-12:after {
+      transform: rotate(60deg);
+    }
+    .help-btn{
+      margin: 10px;
+      height: 50px;
+      margin-left: 20px;
+      padding: 5px;
+      border: none;
+      border-radius: 30px;
+      width: 120px;
+      color: white;
+      background-color: #7e2bd4;
+    }
+    .help-btn:hover{
+      box-shadow: 2px 2px 20px #7e2bd4;
+    }
+  .help-btn:active{
+    font-size: 15px;
+  }
+  .about{
+    margin-top: 50px;
+
+  }
+  .about-header{
+    text-decoration: underline;
+  }
+  .contain{
+    height: auto;
+    margin-top: 30px;
+    padding: 20px;
+    width: 20vw;
+    color: black;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: gray 2px 2px 5px;
+  }
+  .head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contain-header{
+
+  }
+  .contain-all{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  @media(max-width:988px){
+    .image-cont{
+      display: none;
+    }
+    .header-text{
+      font-size: 80px;
+    }
+    .contain{
+      width: 80vw;
+      height: 400px;
+    }
+    .first{
+      margin-left: 0;
+    }
+    .about-header{
+      margin-left: 25%;
+    }
+    .contain-all{
+      margin-left: 30px;
+      flex-direction: column;
+    }
+    .head{
+      width: 300px;
+      margin: 0;
+    }
+  }
