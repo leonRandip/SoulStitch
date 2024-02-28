@@ -1,0 +1,107 @@
+
+.slider-container {
+  display: flex;
+  width: 82vw;
+  height: 40vh;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-between;
+  margin-top: 50px;
+  background-color: white;
+}
+.slider-content {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  width: 180px;
+  height: auto;
+}
+
+.text-content {
+  margin-left: 20px;
+}
+
+.radio-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+.radio-container input[type="radio"] {
+    visibility: hidden;
+}
+
+
+.container1{
+  position: relative;
+  margin: 0px;
+  cursor: pointer;
+  display: block;
+  padding-left: 35px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.container1 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.container1 input:checked ~ .checkmark {
+  transform: scale(1.2);
+  border: #7e2bd4 1px solid;
+  background-color: transparent;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+	left: 3px;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background: #7e2bd4;
+}
+.container1 input:checked ~ .checkmark:after {
+  display: block;
+}
+.container1 .checkmark:after {
+ 	top: 4px;
+	left: 4px;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background: #7e2bd4;
+}
+.Slider-subhead{
+    font-size: 25px;
+    color: #d7c1dd;
+    
+}
+.Slider-head{
+    font-size: 40px;
+}
+.Slider-description{
+    font-size: 15px;
+    color: gray;
+}
+.Slider-author{
+    font-size:25px;
+}

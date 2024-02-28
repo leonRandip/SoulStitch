@@ -17,4 +17,8 @@
     width: 100%;
     margin: none;
   }
+  #root{
+    margin: 0;
+    padding: 10px;
+  }
 }

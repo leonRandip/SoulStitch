@@ -8,13 +8,12 @@
 }
 .header-text{
     font-size: 100px;
-     margin-left: 10px;
+   
      color: black;
      width: 50vw;
 }
 .sub-text{
-    margin-left: 20px;
-    font-size: 40px;
+    font-size: 20px;
     color: gray;
     width: 50vw;
 }
@@ -60,7 +59,6 @@
     .help-btn{
       margin: 10px;
       height: 50px;
-      margin-left: 20px;
       padding: 5px;
       border: none;
       border-radius: 30px;
@@ -88,16 +86,14 @@
     width: 20vw;
     color: black;
     border-radius: 5px;
-    background-color: white;
-    box-shadow: gray 2px 2px 5px;
+    background-color: #fff;
+
   }
   .head{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
   }
   .contain-header{
-
+    font-size: 20px;
   }
   .contain-all{
     display: flex;
@@ -115,15 +111,9 @@
     .contain{
       width: 80vw;
       height: 400px;
-    }
-    .first{
-      margin-left: 0;
-    }
-    .about-header{
-      margin-left: 25%;
+      margin-left: 20px;
     }
     .contain-all{
-      margin-left: 30px;
       flex-direction: column;
     }
     .head{

@@ -2,13 +2,14 @@ import './Content.css';
 import {ChevronRight, Flag} from 'react-bootstrap-icons';
 import { Constant } from './constant';
 const Content=()=>{
+  const header = "Get Your Mental Health Under Control";
+  const subtext= "online health and mental health recovery course with an experienced practitioner";
     return (
       <div className="wrap">
         <div className="text-cont">
-          <h1 className="header-text">Get Your Mental Health Under Control</h1>
+          <h1 className="header-text">{header}</h1>
           <p className="sub-text">
-            online health and mental health recovery course with an experienced
-            practitioner
+            {subtext}
           </p>
           <button className="help-btn">
             Get Help <ChevronRight />
