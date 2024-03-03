@@ -1,0 +1,20 @@
+.Counter-wrap{
+  width: 82vw;
+  height: 40vh;
+  padding: 10px;
+  margin-top: 50px;
+  background-color: #f5f3f5;
+  
+}
+.Counter-image{
+  display: flex;
+  justify-content: flex-end;
+}
+.imgage{
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 180px;
+    
+    filter: drop-shadow(10px -6px 2px black);
+}

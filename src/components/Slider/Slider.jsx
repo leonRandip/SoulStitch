@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { sliderContent } from "./SliderContent";
 import "./Slider.css"; 
 
@@ -8,10 +8,22 @@ const Slider = () => {
   const handleRadioChange = (index) => {
     setCurrentIndex(index);
   };
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentIndex((prevIndex) =>
+        prevIndex < sliderContent.length - 1 ? prevIndex + 1 : 0
+      );
+    }, 5000);
+
+    return () => clearInterval(intervalId); // Clear interval on component unmount
+  }, []);
+
 
   return (
     <div className="slider-container">
-      <div className="slider-content">
+      <div
+        className="slider-content"
+      >
         <img src={sliderContent[currentIndex].image} alt="Slider Content" />
         <div className="text-content">
           <h3 className="Slider-subhead">
