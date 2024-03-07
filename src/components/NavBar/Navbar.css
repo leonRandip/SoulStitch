@@ -1,8 +1,7 @@
-
 .custom-navbar {
   background-color: #f5f3f5 !important;
   color: #636262 !important;
-  
+  z-index: 999;
 }
 .search-btn {
   border: #7e2bd4 solid 2px;
@@ -34,10 +33,13 @@
   box-shadow: 5px 5px 0px #4f1b86, -2px -2px 0px #ad3bff;
 }
 @media (max-width: 988px) {
+  .custom-navbar {
+    margin: 0;
+    width: 100%;
+  }
   .nav-items:hover {
     box-shadow: none;
-    background-color: white;
+    background-color: #f5f3f5;
     color: #7e2bd4 !important;
   }
- 
 }

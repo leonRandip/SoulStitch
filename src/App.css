@@ -13,7 +13,6 @@
   width: 1200px;
   margin: 0 auto;
 }
-
 .bounce {
   animation: bounceAnimation 1s ease forwards;
 }
@@ -35,6 +34,8 @@
   }
   #root {
     margin: 0;
+  }
+  .pad-layer{
     padding: 10px;
   }
 }

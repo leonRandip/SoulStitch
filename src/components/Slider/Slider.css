@@ -115,9 +115,10 @@
   .slider-container {
     height: 400px;
     flex-direction: column;
+    z-index: 299;
   }
   .slider-image {
-    opacity: 30%;
+    opacity: 10%;
     height: 100%;
     width: 100%;
     object-fit: cover;

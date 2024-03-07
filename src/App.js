@@ -9,17 +9,19 @@ import './App.css';
 function App() {
     
   return (
-    <div className='container-wrapper'>
-      <NavBar/>
-      <Content/>
-      <Slider/>
-      <TwoColumn
-        url={image6}
-        subHeading="What we are"
-        heading="Looking for a Professional psychological support?"
-        desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet enim vel purus malesuada, venenatis convallis magna venenatis. Aliquam tellus erat, convallis ut pretium nec, porta at libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus quis urna dictum accumsan."
-      />
-      {/* <Counter/> */}
+    <div className="container-wrapper">
+      <NavBar />
+      <div className="pad-layer">
+        <Content />
+        <Slider />
+        <TwoColumn
+          url={image6}
+          subHeading="What we are"
+          heading="Looking for a Professional psychological support?"
+          desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet enim vel purus malesuada, venenatis convallis magna venenatis. Aliquam tellus erat, convallis ut pretium nec, porta at libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus quis urna dictum accumsan."
+        />
+        {/* <Counter/> */}
+      </div>
     </div>
   );
 }
