@@ -1,8 +1,7 @@
-
 .slider-container {
   display: flex;
-  width: 82vw;
-  height: 40vh;
+  width: 100%;
+  height: 300px;
   align-items: center;
   padding: 10px;
   justify-content: space-between;
@@ -12,15 +11,23 @@
 .slider-content {
   display: flex;
   align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
-img {
-  width: 180px;
+.slider-image {
+  position: absolute;
   height: auto;
+  width: 180px;
+}
+
+.slider-image-blur {
+  filter: blur(5px);
 }
 
 .text-content {
-  margin-left: 20px;
+  margin-left: 200px;
 }
 
 .radio-container {
@@ -31,11 +38,10 @@ img {
   align-items: center;
 }
 .radio-container input[type="radio"] {
-    visibility: hidden;
+  visibility: hidden;
 }
 
-
-.container1{
+.container1 {
   position: relative;
   margin: 0px;
   cursor: pointer;
@@ -74,35 +80,58 @@ img {
   content: "";
   position: absolute;
   top: 3px;
-	left: 3px;
-	width: 5px;
-	height: 5px;
-	border-radius: 50%;
-	background: #7e2bd4;
+  left: 3px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #7e2bd4;
 }
 .container1 input:checked ~ .checkmark:after {
   display: block;
 }
 .container1 .checkmark:after {
- 	top: 4px;
-	left: 4px;
-	width: 5px;
-	height: 5px;
-	border-radius: 50%;
-	background: #7e2bd4;
+  top: 4px;
+  left: 4px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #7e2bd4;
 }
-.Slider-subhead{
-    font-size: 25px;
-    color: #d7c1dd;
-    
+.Slider-subhead {
+  font-size: 25px;
+  color: #d7c1dd;
 }
-.Slider-head{
-    font-size: 40px;
+.Slider-head {
+  font-size: 40px;
 }
-.Slider-description{
-    font-size: 15px;
-    color: gray;
+.Slider-description {
+  font-size: 15px;
+  color: gray;
 }
-.Slider-author{
-    font-size:25px;
+.Slider-author {
+  font-size: 25px;
+}
+@media (max-width: 988px) {
+  .slider-container {
+    height: 400px;
+  }
+  .slider-image {
+    opacity: 30%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: blur(1px);
+  }
+  .text-content {
+    margin-left: 0px;
+  }
+  .Slider-head {
+    font-size: 30px;
+  }
+  .Slider-subhead {
+    font-size: 18px;
+  }
+  .Slider-author {
+    font-size: 18px;
+  }
 }

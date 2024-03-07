@@ -2,22 +2,37 @@
   font-family: Mona Sans;
   src: url("./components/Styling/MonaSans-Black.ttf");
 }
-#root{
-    margin: 5px;
-    padding: 5px;
-    font-family: Mona Sans;
-    background-color: #f5f3f5;
+#root {
+  margin: 5px;
+  padding: 5px;
+  font-family: Mona Sans;
+  background-color: #f5f3f5;
 }
-.container-wrapper{
+.container-wrapper {
   width: 1200px;
   margin: 0 auto;
 }
-@media(max-width:988px){
-  .container-wrapper{
+
+.bounce {
+  animation: bounceAnimation 1s ease forwards;
+}
+
+@keyframes bounceAnimation {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(100%);
+    opacity: inherit;
+  }
+}
+@media (max-width: 988px) {
+  .container-wrapper {
     width: 100%;
     margin: none;
   }
-  #root{
+  #root {
     margin: 0;
     padding: 10px;
   }

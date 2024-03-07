@@ -1,123 +1,164 @@
-
-.wrap{
+.wrap {
   margin-top: 100px;
 }
-.contain-subtext{
+.contain-subtext {
   font-size: 15px;
+  color: rgb(87, 87, 87);
+}
+.header-text {
+  font-size: 80px;
+
+  color: black;
+  width: 60%;
+}
+.sub-text {
+  font-size: 20px;
   color: gray;
+  width: 60%;
 }
-.header-text{
-    font-size: 100px;
-   
-     color: black;
-     width: 50vw;
+.banner {
+  position: relative;
+  min-height: 440px;
 }
-.sub-text{
-    font-size: 20px;
-    color: gray;
-    width: 50vw;
-}
-.text-cont{
+.text-cont {
   position: relative;
   margin-top: 50px;
   margin: 0;
+  z-index: 1;
 }
-.image-cont{
+.image-cont {
   top: 0;
-  margin-top: 20px ;
-    margin-left: 70%;
-    position: absolute;
+  right: 0;
+  position: absolute;
+  width: 40%;
+  height: 90%;
 }
-.burst-12 {
-      background-image: url('../Styling/portrait-smiling-young-casual-brunette-woman_171337-29897.avif');
-      width: 200px;
-      height: 200px;
-      border-radius: 10px;
-      position: relative;
-      text-align: center;
-      background-size: cover;
-      
-    }
-    .burst-12:before,
-    .burst-12:after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 200px;
-      width: 200px;
-      border-radius: 10px;
-      background-size: cover;
-      background-color: rgba(0, 0, 0, 0.129);
-    }
-    .burst-12:before {
-      transform: rotate(30deg);
-    }
-    .burst-12:after {
-      transform: rotate(60deg);
-    }
-    .help-btn{
-      margin: 10px;
-      height: 50px;
-      padding: 5px;
-      border: none;
-      border-radius: 30px;
-      width: 120px;
-      color: white;
-      background-color: #7e2bd4;
-    }
-    .help-btn:hover{
-      box-shadow: 2px 2px 20px #7e2bd4;
-    }
-  .help-btn:active{
-    font-size: 15px;
-  }
-  .about{
+.image-cont .image-1 {
+  background-image: url("../Styling/HAPPINESS.png");
+  width: 200px;
+  height: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  transform: scale(0);
+}
+.image-cont .image-2 {
+  background-image: url("../Styling/CALM.png");
+  width: 240px;
+  height: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  animation-delay: 0.5s;
+  transform: scale(0);
+}
+.image-cont .image-3 {
+  background-image: url("../Styling/CONFIDENCE.png");
+  width: 200px;
+  height: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  animation-delay: 1s;
+  transform: scale(0);
+}
+.image-cont .image-4 {
+  background-image: url("../Styling/LOVE.png");
+  width: 250px;
+  height: 250px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-position: bottom;
+  animation-delay: 1.5s;
+  transform: scale(0);
+}
+.help-btn {
+  margin: 10px;
+  height: 50px;
+  padding: 5px;
+  border: none;
+  border-radius: 30px;
+  width: 120px;
+  color: white;
+  background-color: #7e2bd4;
+}
+.help-btn:hover {
+  box-shadow: 2px 2px 20px #7e2bd4;
+}
+.help-btn:active {
+  font-size: 15px;
+}
+.about {
+  margin-top: 50px;
+}
+.about-header {
+  text-decoration: underline;
+  text-align: center;
+}
+.contain {
+  height: auto;
+  margin-top: 30px;
+  padding: 20px;
+  width: calc(25% - 10px);
+  color: black;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.contain-header {
+  font-size: 20px;
+}
+.contain-all {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+@media (max-width: 988px) {
+  .wrap {
     margin-top: 50px;
+  }
+  .banner {
+    min-height: 300px;
+  }
+  .text-cont {
+    margin-top: 20px;
+  }
+  .image-cont {
+    position: fixed;
+    width: 100%;
+    height: 80vh;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .image-cont > div {
+    width: 130px !important;
+    height: 130px !important;
+    opacity: 40% !important;
+  }
 
+  .header-text {
+    font-size: 40px;
+    width: 100%;
   }
-  .about-header{
-    text-decoration: underline;
+  .sub-text {
+    width: 100%;
   }
-  .contain{
+  .contain {
+    width: 100%;
     height: auto;
-    margin-top: 30px;
-    padding: 20px;
-    width: 20vw;
-    color: black;
-    border-radius: 5px;
-    background-color: #fff;
-
   }
-  .head{
-    text-align: center;
+  .contain-all {
+    flex-direction: column;
   }
-  .contain-header{
-    font-size: 20px;
+  .head {
+    width: 300px;
+    margin: 0;
   }
-  .contain-all{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  @media(max-width:988px){
-    .image-cont{
-      display: none;
-    }
-    .header-text{
-      font-size: 80px;
-    }
-    .contain{
-      width: 80vw;
-      height: 400px;
-      margin-left: 20px;
-    }
-    .contain-all{
-      flex-direction: column;
-    }
-    .head{
-      width: 300px;
-      margin: 0;
-    }
-  }
+}

@@ -1,0 +1,40 @@
+.two-column {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+  padding-right: 20px;
+  align-items: center;
+  background-color: white;
+}
+
+.two-column div {
+  width: 50%;
+}
+.sub-heading {
+  color: #d7c1dd;
+}
+.desc,
+.sub-heading,
+.heading {
+  padding-right: 10px;
+}
+.tcol-img {
+  width: 100%;
+  height: auto;
+  opacity: 0;
+}
+@media (max-width: 988px) {
+  .two-column {
+    flex-direction: column;
+  }
+  .two-column div {
+    width: 100%;
+  }
+  .desc,
+  .sub-heading,
+  .heading {
+    text-align: center;
+  }
+}
