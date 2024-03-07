@@ -114,6 +114,7 @@
 @media (max-width: 988px) {
   .slider-container {
     height: 400px;
+    flex-direction: column;
   }
   .slider-image {
     opacity: 30%;
@@ -133,5 +134,13 @@
   }
   .Slider-author {
     font-size: 18px;
+  }
+  .radio-container {
+    flex-direction: row;
+    padding-left: 0;
+    padding-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
   }
 }

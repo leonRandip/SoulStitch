@@ -13,7 +13,7 @@ export default function TwoColumn(props) {
     return words.join(" ");
   };
   return (
-    <div className="two-column">
+    <div className="two-column" id="twocol">
       <div className="img" ref={elementRef}>
         <img className={`tcol-img ${isIntersecting? 'bounce': ''}`} src={url} alt="" />
       </div>
