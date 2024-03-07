@@ -4,7 +4,9 @@ import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "./Navbar.css";
+import { useNavigate } from "react-router";
 const NavBar = () => {
+  const navigate= useNavigate();
   return (
     <>
       <Navbar expand="lg" className="bg-body-tertiary custom-navbar">
@@ -17,10 +19,10 @@ const NavBar = () => {
               style={{ maxHeight: "120px" }}
               navbarScroll
             >
-              <Nav.Link className="nav-items" href="#twocol">
+              <Nav.Link className="nav-items" onClick={()=>navigate('/dynamic/about')}>
                 About us
               </Nav.Link>
-              <Nav.Link href="#action2" className="nav-items">
+              <Nav.Link onClick={()=>navigate('/dynamic/contact')} className="nav-items">
                 Our program
               </Nav.Link>
 

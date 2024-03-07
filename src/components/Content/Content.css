@@ -131,9 +131,7 @@
     margin-top: 20px;
   }
   .image-cont {
-    position: fixed;
     width: 100%;
-    height: 80vh;
     top: 50%;
     transform: translateY(-50%);
   }
