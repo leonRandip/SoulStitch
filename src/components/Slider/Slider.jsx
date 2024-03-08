@@ -25,7 +25,7 @@ const Slider = () => {
       });
     }, 8000);
 
-    return () => clearInterval(intervalId); // Clear interval on component unmount
+    return () => clearInterval(intervalId);
   }, []);
 
   return (

@@ -1,0 +1,21 @@
+.socials {
+  left: 0;
+  bottom: 0;
+  width: 1200px;
+  padding: 15px;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+}
+.footer-logo {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.disabled-text {
+  font-size: 16px;
+  color: gray;
+  box-shadow: inset 5px gray;
+}
