@@ -10,9 +10,9 @@ const Footer = () => {
         <div className="logos">
           <img
             className="footer-logo"
+            id="firstlogo"
             src={facebook}
             alt="facebook"
-            style={{ marginLeft: "999px" }}
           ></img>
           <img className="footer-logo" src={instagram} alt="instagram"></img>
           <img className="footer-logo" src={linkedin} alt="linkedin"></img>

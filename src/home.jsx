@@ -8,7 +8,6 @@ const Home = () => {
   return (
     <>
       <div className="container-wrapper">
-        <NavBar />
         <div className="pad-layer">
           <Content />
           <Slider />
@@ -18,7 +17,7 @@ const Home = () => {
             heading="Looking for a Professional psychological support?"
             desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet enim vel purus malesuada, venenatis convallis magna venenatis. Aliquam tellus erat, convallis ut pretium nec, porta at libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus quis urna dictum accumsan."
           />
-          <Footer />
+
           {/* <Counter/> */}
         </div>
       </div>

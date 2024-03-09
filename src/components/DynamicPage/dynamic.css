@@ -1,0 +1,27 @@
+.dynamic-head {
+  text-align: center;
+}
+.dynamic-content {
+  margin-top: 20px;
+  margin-bottom: 80px;
+  display: flex;
+}
+.heading {
+  margin-top: 80px;
+}
+.dynamic-content p {
+  width: 50%;
+  margin-top: 50px;
+}
+.pebble {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  margin-left: 200px;
+  background-size: cover;
+  border-radius: 84% 16% 34% 66% / 52% 21% 79% 48%;
+  overflow: hidden;
+  position: relative;
+  filter: drop-shadow(-20px 10px 0px #7e2bd4);
+  z-index: 999;
+}

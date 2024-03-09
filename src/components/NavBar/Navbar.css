@@ -26,6 +26,9 @@
   border: none;
   box-shadow: none;
 }
+.navbar-logo {
+  cursor: pointer;
+}
 .nav-items:hover {
   color: white !important;
   border-radius: 50px;

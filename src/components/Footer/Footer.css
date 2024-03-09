@@ -14,8 +14,18 @@
   margin-right: 5px;
   cursor: pointer;
 }
+#firstlogo {
+  margin-left: 999px;
+}
 .disabled-text {
   font-size: 16px;
   color: gray;
-  box-shadow: inset 5px gray;
+}
+@media (max-width: 988px) {
+  .socials {
+    width: 100%;
+  }
+  #firstlogo {
+    margin-left: 200px;
+  }
 }

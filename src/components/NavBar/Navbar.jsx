@@ -7,11 +7,19 @@ import "./Navbar.css";
 import { useNavigate } from "react-router";
 const NavBar = () => {
   const navigate= useNavigate();
+  const reloadIfOnSamePage= ()=>{
+    if(window.location.pathname=='/'){
+      window.location.reload();
+    }
+    else{
+      navigate('/');
+    }
+  }
   return (
     <>
       <Navbar expand="lg" className="bg-body-tertiary custom-navbar">
         <Container fluid>
-          <Navbar.Brand href="#">Logo</Navbar.Brand>
+          <Navbar.Brand className="navbar-logo" onClick={reloadIfOnSamePage}>Logo</Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
