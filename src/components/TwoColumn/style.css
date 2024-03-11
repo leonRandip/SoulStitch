@@ -8,13 +8,14 @@
   padding-right: 20px;
   align-items: center;
   background-color: white;
+  border-radius: 50px;
 }
 
 .two-column div {
   width: 50%;
 }
 .sub-heading {
-  color: #d7c1dd;
+  color: #cc8084;
 }
 .desc,
 .sub-heading,

@@ -1,5 +1,6 @@
 .dynamic-head {
   text-align: center;
+  margin-top: 20px;
 }
 .dynamic-content {
   margin-top: 20px;
@@ -8,20 +9,45 @@
 }
 .heading {
   margin-top: 80px;
+  color: #cc8084;
+}
+.dynamic-content {
+  display: flex;
 }
 .dynamic-content p {
-  width: 50%;
   margin-top: 50px;
+  width: 50%;
+  color: gray;
+  font-size: 18px;
+}
+
+.dynamic-content p strong {
+  color: black;
+}
+.dynamic-content.full-width p {
+  width: 100%;
 }
 .pebble {
   height: 300px;
   width: 300px;
-  position: absolute;
   margin-left: 200px;
   background-size: cover;
   border-radius: 84% 16% 34% 66% / 52% 21% 79% 48%;
   overflow: hidden;
   position: relative;
-  filter: drop-shadow(-20px 10px 0px #7e2bd4);
+  filter: drop-shadow(-20px 10px 0px #cc8084);
   z-index: 999;
+}
+
+@media (max-width: 988px) {
+  .dynamic-content {
+    flex-direction: column;
+  }
+  .dynamic-content p {
+    width: 100%;
+  }
+  .pebble {
+    margin-left: 0px;
+    margin: 0 auto;
+  }
 }

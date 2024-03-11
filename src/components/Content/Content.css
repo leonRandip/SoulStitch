@@ -5,10 +5,15 @@
   font-size: 15px;
   color: rgb(87, 87, 87);
 }
+.header-pre-text {
+  font-size: 50px;
+  color: #cc8084;
+  width: 60%;
+}
 .header-text {
-  font-size: 80px;
-
-  color: black;
+  font-size: 90px;
+  font-family: "HJ";
+  color: #cc8084;
   width: 60%;
 }
 .sub-text {
@@ -34,14 +39,15 @@
   height: 90%;
 }
 .image-cont .image-1 {
-  background-image: url("../Styling/HAPPINESS.png");
-  width: 200px;
-  height: 200px;
+  background-image: url("../Styling/I_HEAR_YOU.png");
+  width: 500px;
+  height: 500px;
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
   transform: scale(0);
+  border-radius: 20px;
 }
 .image-cont .image-2 {
   background-image: url("../Styling/CALM.png");
@@ -87,10 +93,10 @@
   border-radius: 30px;
   width: 120px;
   color: white;
-  background-color: #7e2bd4;
+  background-color: #cc8084;
 }
 .help-btn:hover {
-  box-shadow: 2px 2px 20px #7e2bd4;
+  box-shadow: 2px 2px 20px #cc8084;
 }
 .help-btn:active {
   font-size: 15px;
@@ -101,6 +107,7 @@
 .about-header {
   text-decoration: underline;
   text-align: center;
+  color: #cc8084;
 }
 .contain {
   height: auto;
@@ -108,8 +115,12 @@
   padding: 20px;
   width: calc(25% - 10px);
   color: black;
-  border-radius: 5px;
+  border-radius: 50px;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .contain-header {
   font-size: 20px;
@@ -119,6 +130,12 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
+}
+.contain-header {
+  text-align: center;
+}
+.contain-subtext {
+  text-align: center;
 }
 @media (max-width: 988px) {
   .wrap {
@@ -135,12 +152,13 @@
     top: 50%;
     transform: translateY(-50%);
   }
-  .image-cont > div {
-    width: 130px !important;
-    height: 130px !important;
-    opacity: 40% !important;
+  .image-cont .image-1 {
+    display: none;
   }
-
+  .header-pre-text {
+    font-size: 30px;
+    width: 100%;
+  }
   .header-text {
     font-size: 40px;
     width: 100%;

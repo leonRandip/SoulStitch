@@ -2,21 +2,23 @@
   background-color: #f5f3f5 !important;
   color: #636262 !important;
   z-index: 999;
+  border-radius: 50px;
+  padding: 10px 50px;
 }
 .search-btn {
-  border: #7e2bd4 solid 2px;
+  border: #cc8084 solid 2px !important;
   background-color: #f5f3f5;
-  color: #7e2bd4;
+  color: #cc8084;
   border-radius: 20px 20px 20px 20px;
 }
 .search-btn:hover {
   color: white;
   border-radius: 50px;
-  background: #7e2bd4;
-  box-shadow: 5px 5px 0px #4f1b86, -2px -2px 0px #ad3bff;
+  background: #cc8084;
+  box-shadow: 5px 5px 0px #fdcece, -2px -2px 0px #cc8084;
 }
 .custom-search:focus {
-  border: #7e2bd4 solid 2px;
+  border: #cc8084 solid 2px;
   box-shadow: none;
 }
 .nav-items {
@@ -28,12 +30,14 @@
 }
 .navbar-logo {
   cursor: pointer;
+  color: #cc8084;
+  font-size: 20px;
 }
 .nav-items:hover {
   color: white !important;
   border-radius: 50px;
-  background: #7e2bd4;
-  box-shadow: 5px 5px 0px #4f1b86, -2px -2px 0px #ad3bff;
+  background: #cc8084;
+  box-shadow: 5px 5px 0px #fdcece, -2px -2px 0px #cc8084;
 }
 @media (max-width: 988px) {
   .custom-navbar {
@@ -43,6 +47,9 @@
   .nav-items:hover {
     box-shadow: none;
     background-color: #f5f3f5;
-    color: #7e2bd4 !important;
+    color: #cc8084 !important;
+  }
+  .navbar-logo {
+    font-size: 14px;
   }
 }

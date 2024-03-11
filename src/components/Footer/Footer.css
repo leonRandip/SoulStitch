@@ -7,15 +7,14 @@
   background-color: white;
   display: flex;
   flex-direction: row;
+  border-radius: 50px;
+  justify-content: space-between;
 }
 .footer-logo {
   width: 30px;
   height: 30px;
   margin-right: 5px;
   cursor: pointer;
-}
-#firstlogo {
-  margin-left: 999px;
 }
 .disabled-text {
   font-size: 16px;
@@ -24,8 +23,5 @@
 @media (max-width: 988px) {
   .socials {
     width: 100%;
-  }
-  #firstlogo {
-    margin-left: 200px;
   }
 }

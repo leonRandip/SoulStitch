@@ -26,16 +26,25 @@ const Dynamic = () => {
         <div className="dynamic-head">
           <h1>{contentData.header}</h1>
         </div>
-        <div className="heading">
-          <h1>{contentData.heading}</h1>
-        </div>
-        <div className="dynamic-content">
-          <p>{contentData.content}</p>
-          <div
-            className="pebble"
-            style={{ backgroundImage: `url(${contentData.image})` }}
-          ></div>
-        </div>
+        {contentData.data?.map((data) => (
+          <div>
+            <div className="heading">
+              <h2>{data.heading}</h2>
+            </div>
+            <div
+              className={`dynamic-content ${data.image ? "" : "full-width"}`}
+            >
+              <p dangerouslySetInnerHTML={{ __html: data.content }} />
+
+              {data.image && (
+                <div
+                  className="pebble"
+                  style={{ backgroundImage: `url(${data.image})` }}
+                />
+              )}
+            </div>
+          </div>
+        ))}
       </div>
     </>
   );

@@ -3,11 +3,16 @@
   src: url("./components/Styling/MonaSans-Black.ttf");
 }
 
+@font-face {
+  font-family: "HJ";
+  src: url("./components/Styling/Hickory\ Jack.ttf");
+}
+
 #root {
   margin: 5px;
   padding: 5px;
-  font-family: Mona Sans;
-  background-color: #f5f3f5;
+  font-family: "Trebuchet MS", sans-serif;
+  background-color: #fdcece;
   scroll-behavior: smooth;
 }
 .container-wrapper {
@@ -36,7 +41,7 @@
   #root {
     margin: 0;
   }
-  .pad-layer{
+  .pad-layer {
     padding: 10px;
   }
 }

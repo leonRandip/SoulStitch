@@ -1,34 +1,47 @@
 export const Constant = [
   {
-    header: "Mini Lessons",
-    subtext: "All lessons are based on practical experience only.",
+    header: "Bereavement Counselling",
   },
   {
-    header: "Private Communication",
-    subtext: "No one will know your innermost secrets.",
+    header: "Substance Abuse Counselling",
   },
   {
-    header: "Great Community",
-    subtext: "You will always be surrounded by people who will help you.",
+    header: "Relationship and Marriage Counselling",
   },
   {
-    header: "We work in Telegram",
-    subtext: "No new platforms or passwords.",
+    header: "Individual Wellbeing",
   },
   {
-    header: "Mini Lessons",
-    subtext: "All lessons are based on practical experience only.",
+    header: "Spirituality and Existential Counselling",
   },
   {
-    header: "Private Communication",
-    subtext: "No one will know your innermost secrets.",
+    header: "Educational Betterment",
   },
   {
-    header: "Great Community",
-    subtext: "You will always be surrounded by people who will help you.",
+    header: "Adolescent Transition",
   },
   {
-    header: "We work in Telegram",
-    subtext: "No new platforms or passwords.",
+    header: "Family Counselling",
+  },
+  {
+    header: "Children Wellbeing",
+  },
+  {
+    header: "Depression Counselling",
+  },
+  {
+    header: "Anxiety Disorders Counselling",
+  },
+  {
+    header: "Identity Crisis Support",
+  },
+  {
+    header: "Stress Disorder Counselling",
+  },
+  {
+    header: "Work Stress and Work-Life Management",
+  },
+  {
+    header: "Trauma-Related Disorders Counselling",
   },
 ];

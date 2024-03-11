@@ -15,7 +15,7 @@ const Home = () => {
             url={image6}
             subHeading="What we are"
             heading="Looking for a Professional psychological support?"
-            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet enim vel purus malesuada, venenatis convallis magna venenatis. Aliquam tellus erat, convallis ut pretium nec, porta at libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus quis urna dictum accumsan."
+            desc="At Cast Their Burdens, we recognize that life's journey is marked by a myriad of experiences, challenges, and transitions, and seeking support is a courageous step towards healing. Our mission is to provide a haven where individuals can share their burdens and find tailored solutions for their unique struggles. Rooted in principles of Love, Kindness, Compassion, Honesty, and Empathy, we offer a comprehensive range of professional services to address a wide spectrum of mental health and well-being concerns"
           />
 
           {/* <Counter/> */}

@@ -6,20 +6,21 @@ import Navbar from "react-bootstrap/Navbar";
 import "./Navbar.css";
 import { useNavigate } from "react-router";
 const NavBar = () => {
-  const navigate= useNavigate();
-  const reloadIfOnSamePage= ()=>{
-    if(window.location.pathname=='/'){
+  const navigate = useNavigate();
+  const reloadIfOnSamePage = () => {
+    if (window.location.pathname == "/") {
       window.location.reload();
+    } else {
+      navigate("/");
     }
-    else{
-      navigate('/');
-    }
-  }
+  };
   return (
     <>
       <Navbar expand="lg" className="bg-body-tertiary custom-navbar">
         <Container fluid>
-          <Navbar.Brand className="navbar-logo" onClick={reloadIfOnSamePage}>Logo</Navbar.Brand>
+          <Navbar.Brand className="navbar-logo" onClick={reloadIfOnSamePage}>
+            CAST YOUR BURDENS
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
@@ -27,18 +28,11 @@ const NavBar = () => {
               style={{ maxHeight: "120px" }}
               navbarScroll
             >
-              <Nav.Link className="nav-items" onClick={()=>navigate('/dynamic/about')}>
+              <Nav.Link
+                className="nav-items"
+                onClick={() => navigate("/dynamic/about")}
+              >
                 About us
-              </Nav.Link>
-              <Nav.Link onClick={()=>navigate('/dynamic/contact')} className="nav-items">
-                Our program
-              </Nav.Link>
-
-              <Nav.Link href="#" className="nav-items">
-                Prices
-              </Nav.Link>
-              <Nav.Link href="#action2" className="nav-items">
-                Our coaches
               </Nav.Link>
             </Nav>
             <Form className="d-flex">
